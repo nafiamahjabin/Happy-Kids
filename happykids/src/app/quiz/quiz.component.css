@@ -1,0 +1,18 @@
+.has-access {
+    color: #ffffff;
+    background: #256398;
+    padding: 20px;
+}
+button {
+    margin: 2%;
+}
+button:hover {
+    background-color: #FF633C;
+}
+h2 {
+    margin: 2%;
+}
+small {
+    font-weight: normal;
+    color: gray;
+}

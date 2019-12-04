@@ -1,0 +1,311 @@
+<app-navbar></app-navbar>
+<app-slider></app-slider>
+<div class="section-two">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="../../assets/images/icon-2.png" alt="">
+                    </div>
+                    <div class="col-md-8">
+                        <h2>Cartoons</h2>
+                        <p>Which Cartoon series do you watch? Misha and the bear? Shiva? Tom & Jerry? or Anything else?
+                            Watch here your favourite cartoons!! </p>
+                        <button class="btn btn-primary">More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="../../assets/images/icon-1.png" alt="">
+                    </div>
+                    <div class="col-md-8">
+                        <h2>Poems</h2>
+                        <p>Humpty Dumpty Set on a wall? or twinkle twinkle little star? Which Poem sounds better? I like
+                            both. You? Watch your favourite poem!</p>
+                        <button class="btn btn-primary">More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="../../assets/images/icon-3.png" alt="">
+                    </div>
+                    <div class="col-md-8">
+                        <h2>Quiz Test</h2>
+                        <p>Quiz test is wonderful way to test your knowledge. Don't you want to test? People have fun to
+                            participate! Why don't you try ? ? </p>
+                        <button class="btn btn-primary">More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section-three">
+    <div class="container">
+        <div class="row">
+            <h1>Top 3 Participants of {{quizTitle}} </h1>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="img-area">
+                        <img src="../../assets/images/250x250-kos-1.jpg" alt="">
+                    </div>
+                </div>
+                <h2>{{name1}}</h2>
+                <p>Class: {{cls1}} <br> School: {{school1}} </p>
+
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="img-area">
+                        <img src="../../assets/images/250x250-kos-2@2x.jpg" alt="">
+                    </div>
+                </div>
+                <h2>{{name2}}</h2>
+                <p>Class: {{cls2}} <br> School: {{school2}} </p>
+
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="img-area">
+                        <img src="../../assets/images/250x250-kos-3@2x.jpg" alt="">
+                    </div>
+                </div>
+                <h2>{{name3}}</h2>
+                <p>Class: {{cls3}} <br> School: {{school3}} </p>
+
+
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"><button class="btn btn-primary" (click)="onProfileClick(username1)">Visit
+                    Profile</button></div>
+            <div class="col-md-4"><button class="btn btn-primary" (click)="onProfileClick(username2)">Visit
+                    Profile</button></div>
+            <div class="col-md-4"><button class="btn btn-primary" (click)="onProfileClick(username3)">Visit
+                    Profile</button></div>
+        </div>
+    </div>
+    <div class="line">
+        <div class="container">
+            <hr>
+        </div>
+    </div>
+</div>
+<div class="section-three">
+    <div class="container">
+        <div class="row">
+            <h1>Recent Cartoons</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="img-area">
+                        <img src="../../assets/images/250x250-kos-1.jpg" alt="">
+                    </div>
+                </div>
+                <h2>{{cname1}}</h2>
+                <p>{{ccls1}}</p>
+
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="img-area">
+                        <img src="../../assets/images/250x250-kos-2@2x.jpg" alt="">
+                    </div>
+                </div>
+                <h2>{{cname2}}</h2>
+                <p>{{ccls2}}</p>
+
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="img-area">
+                        <img src="../../assets/images/250x250-kos-3@2x.jpg" alt="">
+                    </div>
+                </div>
+                <h2>{{cname3}}</h2>
+                <p>{{ccls3}}</p>
+
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="img-area">
+                        <img src="../../assets/images/250x250-kos-4@2x.jpg" alt="">
+                    </div>
+                </div>
+                <h2>{{cname4}}</h2>
+                <p>{{ccls4}}</p>
+
+
+
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"><button class="btn btn-primary" (click)="onCartoonClick(ccls1)">Watch</button></div>
+            <div class="col-md-3"><button class="btn btn-primary" (click)="onCartoonClick(ccls2)">Watch</button></div>
+            <div class="col-md-3"><button class="btn btn-primary" (click)="onCartoonClick(ccls3)">Watch</button></div>
+            <div class="col-md-3"><button class="btn btn-primary" (click)="onCartoonClick(ccls4)">Watch</button></div>
+        </div>
+    </div>
+    <div class="line">
+        <div class="container">
+            <hr>
+        </div>
+    </div>
+</div>
+
+<div class="section-three">
+    <div class="container">
+        <div class="row">
+            <h1>Recent Movies</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="img-area">
+                        <img src="../../assets/images/250x250-kos-4@2x.jpg" alt="">
+                    </div>
+                </div>
+                <h2>{{mname1}}</h2>
+
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="img-area">
+                        <img src="../../assets/images/250x250-kos-5@2x.jpg" alt="">
+                    </div>
+                </div>
+                <h2>{{mname2}}</h2>
+
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="img-area">
+                        <img src="../../assets/images/250x250-kos-6@2x.jpg" alt="">
+                    </div>
+                </div>
+                <h2>{{mname3}}</h2>
+
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="img-area">
+                        <img src="../../assets/images/250x250-kos-2@2x.jpg" alt="">
+                    </div>
+                </div>
+                <h2>{{mname4}}</h2>
+
+
+
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"><button class="btn btn-primary" (click)="onMovieClick()">Watch</button></div>
+            <div class="col-md-3"><button class="btn btn-primary" (click)="onMovieClick()">Watch</button></div>
+            <div class="col-md-3"><button class="btn btn-primary" (click)="onMovieClick()">Watch</button></div>
+            <div class="col-md-3"><button class="btn btn-primary" (click)="onMovieClick()">Watch</button></div>
+        </div>
+    </div>
+    <div class="line">
+        <div class="container">
+            <hr>
+        </div>
+    </div>
+</div>
+
+<div class="section-three">
+    <div class="container">
+        <div class="row">
+            <h1>Recent Poems</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="img-area">
+                        <img src="../../assets/images/250x250-kos-1.jpg" alt="">
+                    </div>
+                </div>
+                <h2>{{pname1}}</h2>
+                <p>{{pcls1}}</p>
+
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="img-area">
+                        <img src="../../assets/images/250x250-kos-2@2x.jpg" alt="">
+                    </div>
+                </div>
+                <h2>{{pname2}}</h2>
+                <p>{{pcls2}}</p>
+
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="img-area">
+                        <img src="../../assets/images/250x250-kos-3@2x.jpg" alt="">
+                    </div>
+                </div>
+                <h2>{{pname3}}</h2>
+                <p>{{pcls3}}</p>
+
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="img-area">
+                        <img src="../../assets/images/250x250-kos-4@2x.jpg" alt="">
+                    </div>
+                </div>
+                <h2>{{pname4}}</h2>
+                <p>{{pcls4}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"><button class="btn btn-primary" (click)="onPoemClick(pcls1)">Watch</button></div>
+            <div class="col-md-3"><button class="btn btn-primary" (click)="onPoemClick(pcls2)">Watch</button></div>
+            <div class="col-md-3"><button class="btn btn-primary" (click)="onPoemClick(pcls3)">Watch</button></div>
+            <div class="col-md-3"><button class="btn btn-primary" (click)="onPoemClick(pcls4)">Watch</button></div>
+        </div>
+    </div>
+    <div class="line">
+        <div class="container">
+            <hr>
+        </div>
+    </div>
+</div>
+<div class="section-three">
+    <div class="container">
+        <div class="row">
+            <h1>About Happy Kids</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                    <div class="row">
+                            <div class="img-area">
+                                <img src="../../assets/images/kids.jpg" alt="">
+                            </div>
+                        </div>
+
+            </div>
+            <div class="col-md-10">
+                <p>In ac sollicitudin sem. Proin congue blandit eros, eu volutpat leo maximus vitae. Nulla a velit ut augue pretium fringilla. In hac habitasse platea dictumst. Sed vitae sodales purus. Cras ultrices condimentum lectus, nec laoreet sapien tempus vel. Duis pretium ante purus, et faucibus turpis pellentesque eget. Curabitur ac blandit dolor. Maecenas facilisis eleifend massa ac commodo. Integer justo felis, finibus at faucibus eget, pulvinar a odio. Suspendisse potenti. Curabitur auctor tristique arcu et dapibus. Praesent risus metus, ultricies ac ante interdum, fringilla finibus est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed nec varius enim. Aenean vitae ipsum pretium, elementum sapien at, tristique lacus. Nec laoreet sapien tempus vel. Duis pretium ante purus, et faucibus turpis pellentesque eget. Curabitur ac blandit dolor. Maecenas facilisis eleifend massa ac commodo.Donec at ullamcorper lectus, quis fringilla velit. Aliquam ipsum dui, porttitor id hendrerit nec, mollis ut odio.</p>
+
+            </div>
+
+        </div>
+    </div>
+    
+</div>
+<div class="section-four">
+
+</div>
+<app-footer></app-footer>

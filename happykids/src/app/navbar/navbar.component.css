@@ -1,0 +1,69 @@
+
+.header-area {
+    
+    font-family: myFont;
+    padding: 20px;
+    color: #ffffff;
+}
+.social-icon{
+    padding: 5px;
+}
+i {
+    color: #ffffff;
+    padding: 5px;
+    font-size: 20px;
+    background-color: #3185CB; 
+    border-bottom: 5px solid #256398;
+    border-radius: 12px;
+    margin: 3px;
+   
+}
+i:hover {
+    background-color: #FF633C;
+}
+.dropdown-menu {
+    background-color: #3185CB;
+   
+}
+.dropdown:hover>.dropdown-menu
+{
+    display:block;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 12px;
+    margin: 1px;
+    background-color: #3185CB;
+    font-size: large;
+    border-bottom: 5px solid #256398;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    background-color: #FF633C;
+	
+}
+
+.dropdown-menu .dropdown-item{
+    color: #ffffff;
+}
+.dropdown-menu .dropdown-item:hover {
+    background-color:#FF633C;
+    color: #ffffff;
+}
+.log-reg-area a{
+    
+    background-color: #3185CB; 
+    border-bottom: 5px solid #256398;
+    border-radius: 12px;
+   padding: 10px; 
+    color: #ffffff;
+    margin:5px;
+    
+}
+.log-reg-area a:hover{
+    background-color: #FF633C; 
+}
+.login {
+    text-align: right;
+}

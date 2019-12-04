@@ -1,0 +1,44 @@
+footer {
+    background-color: #3185CB;
+    border-top: 10px solid #2B75B2;
+    padding: 50px;
+}
+.container {
+    color: #ffffff;
+}
+.slide-area{
+    border: 10px solid #ffffff;
+    border-radius: 10px; 
+    
+}
+.slide-area-outer {
+    border-bottom: 5px solid #E8E2C4;
+    border-radius: 10px;
+    margin-bottom: -70px;
+}
+
+.copyright {
+    text-align: center;
+    background: #2B75B2;
+    padding: 10px;
+    color: #FFFFFF;
+}
+.scrolltotop {
+	color: #FFFFFF;
+	background: #fe3c47;
+	padding: 10px 15px;
+	position: fixed;
+	right: 15px;
+	bottom: 0;
+	text-decoration: none;
+	display: none;
+}
+.logo {
+  margin-right: 10px;  
+}
+.para {
+    margin-top: 20px;
+}
+.section {
+    padding: 0 20px;
+}

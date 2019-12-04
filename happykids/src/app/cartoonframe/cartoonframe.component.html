@@ -1,0 +1,27 @@
+<app-navbar></app-navbar>
+<div class="box">
+<div class="container">
+    <div class="border-class">
+    <div class="header">
+        <div class="row">
+            
+                <h1>{{ categoryName.data }}</h1>
+            
+        </div>
+    </div>
+    <div class="video-section">
+        <div class="each-video" *ngFor="let url of safeURL; let i= index">
+
+            <div class="row">
+                <iframe [src]='url' frameborder="0" width="100%" height="250px" allowfullscreen></iframe>
+            </div>
+            <div class="row">
+                <h2>{{ i+1 }}. {{ cartoons[i].car_title }}</h2>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<app-footer></app-footer>

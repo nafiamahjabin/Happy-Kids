@@ -1,0 +1,63 @@
+<div class="admin-login-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-1">
+                        <div class="logo">
+                            <img src="../../assets/images/favicon.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="title">
+                            <img src="../../assets/images/logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="header">
+                    <h2>ADMIN LOGIN</h2>
+                </div>
+                <form>
+                    <div class="form-group row">
+                        <label for="statictext" class="col-sm-2 col-form-label">Username</label>
+                        <div class="col-sm-10">
+                            <input type="text" readonly class="form-control-plaintext" id="statictext" value="ADMIN">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                        <div class="col-sm-4">
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                        </div>
+
+                    </div>
+                    <div class="col-sm-12">
+                        <h4>Upload Section</h4>
+                        <div id="fileSelector">
+                            <input type="file" name="fileUplaod" id="fileUpload"
+                            multiple ng2FileSelect [uploader]="uploader">
+                        </div>
+                        <div>
+                            <div class="row uploadList" *ngFor="let item of uploader.queue">
+                                <div class="col-sm-4">{{item.file.name}}</div>
+                                <div class="col-sm-4">
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success" 
+                                        [ngStyle]="{'width':item.progress+'%'}"></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                        <button type="button" class="btn btn-dark" (click)="item.upload()">Upload</button>
+                                </div>
+                            </div>                        
+                        </div>
+                        <div class="row" *ngIf="uploader?.queue?.length > 0">
+                                <button type="button" class="btn btn-primary" (click)="uploader.uploadAll()">Upload All</button>
+                        </div>
+                    </div>  
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

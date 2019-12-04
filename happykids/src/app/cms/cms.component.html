@@ -1,0 +1,93 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <div class="admin-access" *ngIf='hasAccess'>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="buttons">
+        <div class="btn-group-vertical">
+          <h1>ACTIONS</h1>
+          <button type="button" class="btn btn-primary" (click)="showMovieForm()">ADD MOVIES</button>
+          <button type="button" class="btn btn-primary" (click)="showCartoonForm()">ADD CARTOONS</button>
+          <button type="button" class="btn btn-primary" (click)="showPoemForm()">ADD POEMS</button>
+          <button type="button" class="btn btn-primary" (click)="setAQuizTest()">SET A QUIZ TEST</button>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div class="add-movies" *ngIf="addMovie || (!addCartoon && !addPoem && !addMovie)">
+        <h1>ADD A MOVIE</h1>
+        <form>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Movie Title</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="" name="title"
+              [(ngModel)]="movie.title">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputPassword1">Source Link</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="" name="src"
+              [(ngModel)]="movie.src">
+          </div>
+          <button type="submit" class="btn btn-primary" (click)="onAddMovieClick()">ADD A MOVIE</button>
+        </form>
+
+      </div>
+      <div class="add-cartoons" *ngIf="addCartoon">
+        <h1>ADD A CARTOON</h1>
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Cartoon Category</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=""
+              name="category" [(ngModel)]="cartoon.category">
+
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Cartoon Title</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="" name="title"
+              [(ngModel)]="cartoon.title">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputPassword1">Source Link</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="" name="src"
+              [(ngModel)]="cartoon.src">
+          </div>
+          <button type="submit" class="btn btn-primary" (click)="onAddCartoonClick()">ADD A CARTOON</button>
+        </form>
+      </div>
+      <div class="add-poems" *ngIf="addPoem">
+         
+              <h1>ADD A POEM</h1>
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Poem Category</label>
+                  <select class="form-control" id="exampleFormControlSelect1" name="category" [(ngModel)]="poem.category">
+                      <option>Bangla</option>
+                      <option>English</option>
+                  </select>
+      
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Poem Title</label>
+                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="" name="title"
+                    [(ngModel)]="poem.title">
+                </div>
+      
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Source Link</label>
+                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="" name="src"
+                    [(ngModel)]="poem.src">
+                </div>
+                <button type="submit" class="btn btn-primary" (click)="onAddPoemClick()">ADD A POEM</button>
+              </form>
+            
+      </div>
+    </div>
+  </div>
+</div>
+<div class="no-access" *ngIf="!hasAccess">
+  <h1>Permission denied!!</h1>
+</div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,28 @@
+.table-dark,.container {
+    color: #fff;
+    background-color: #256398;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+a:hover {
+    color: #0F3348;
+}
+h3 , p {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.container {
+    border: 15px solid #306B9D;
+}
+.container, .border-class {
+    border-radius: 10px;
+}
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+    background-color: #0F3348;
+}

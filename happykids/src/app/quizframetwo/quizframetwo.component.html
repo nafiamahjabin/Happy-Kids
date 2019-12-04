@@ -1,0 +1,88 @@
+<app-navbar></app-navbar>
+<div class="container">
+        <div class="border-class">
+                <div class="has-access" *ngIf="hasAccess && !hasSubmitted">
+                        <div class="header-area">
+                                <div class="row">
+                                        <div class="col-md-6">
+                                                <h2>{{quizTitle}}</h2>
+                                        </div>
+                                        <div class="col-md-6">
+                                                <h3>Time (in sec): {{timeCounter}}</h3>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="ques-area">
+                                <div class="row">
+                                        <div class="col-md-3"></div>
+                                        <div class="col-md-7">
+                                                <form *ngFor="let qz of ques; let i= index">
+                                                        <div class="each-ques">
+                                                                <label class="ques" for="ques">{{i+1}}. {{qz.quesTitle}}</label>
+                                                                <div class="form-check">
+                                                                        <input class="form-check-input" type="radio"
+                                                                                value="A" id="defaultradio1" name="A"
+                                                                                [(ngModel)]="ans[i]">
+                                                                        <label class="form-check-label"
+                                                                                for="defaultradio1">
+                                                                                {{qz.optionA}}
+                                                                        </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                        <input class="form-check-input" type="radio"
+                                                                                value="B" id="defaultradio1" name="B"
+                                                                                [(ngModel)]="ans[i]">
+                                                                        <label class="form-check-label"
+                                                                                for="defaultradio1">
+                                                                                {{qz.optionB}}
+                                                                        </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                        <input class="form-check-input" type="radio"
+                                                                                value="C" id="defaultradio1" name="C"
+                                                                                [(ngModel)]="ans[i]">
+                                                                        <label class="form-check-label"
+                                                                                for="defaultradio1">
+                                                                                {{qz.optionC}}
+                                                                        </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                        <input class="form-check-input" type="radio"
+                                                                                value="D" id="defaultradio1" name="D"
+                                                                                [(ngModel)]="ans[i]">
+                                                                        <label class="form-check-label"
+                                                                                for="defaultradio1">
+                                                                                {{qz.optionD}}
+                                                                        </label>
+                                                                </div>
+                                                        </div>
+                                                </form>
+                                                <button class="btn btn-primary"
+                                                        (click)="onClickSubmit()">Submit</button>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                <div class="has-submitted" *ngIf="hasAccess && hasSubmitted">
+                        <h2>Thank you for participating!</h2>
+                        <p>Your Score is {{score}}. <br>Time taken: {{timeTaken}} sec.</p>
+                        <button class="btn btn-primary" (click)="onAnswerClick()">See The answer</button>
+                        <button class="btn btn-primary" (click)="onStandingsClick()">See Standings</button>
+                </div>
+                <div class="ans-clicked" *ngIf="hasAccess && ansClicked">
+                        <div class="ques-answer" *ngFor="let qz of ques; let i=index;">
+                                <h4>{{i+1}}. {{qz.quesTitle}}</h4>
+                                <p>Option A: {{qz.optionA}}</p>
+                                <p>Option B: {{qz.optionB}}</p>
+
+                                <p>Option C: {{qz.optionC}}</p>
+
+                                <p>Option D: {{qz.optionD}}</p>
+
+                                <p>Correct Option: {{qz.correctAns}}. {{ans[i]}}</p>
+                        </div>
+                </div>
+        </div>
+</div>
+
+<app-footer></app-footer>

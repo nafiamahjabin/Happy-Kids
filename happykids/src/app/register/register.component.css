@@ -1,0 +1,14 @@
+.border-con {
+    background-color: #FCF5D5;
+    border: 10px solid #FEE6B4;
+    border-radius: 10px;
+}
+h3 {
+    text-align: center;
+    color: #256398;
+    padding-top: 15px; 
+}
+.login-box {
+    color: #256398;
+    padding: 50px;
+}

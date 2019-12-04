@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: myFont;
+    src: url(./assets/fonts/lobster-two/LobsterTwo-Bold.ttf);
+  }
+html, body {
+    background-color: #8FC0EA !important;
+    background-image: url(./assets/images/pattern_balloons.png) !important;
+    font-family: myFont !important;
+    
+}

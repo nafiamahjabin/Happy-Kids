@@ -1,0 +1,27 @@
+.container {
+     background-color: #0F3348;
+}
+.card {
+    background-color: #0F3348;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+    border: none;
+}
+.card-img-top {
+    text-align: center;
+    width: 180px;
+    margin: auto; 
+}
+button {
+    margin-top: 50px; 
+}
+h3 {
+    color: bisque;
+    margin-top: 10px; 
+    margin-bottom: 30px;
+}
+small {
+    color: red;
+    font-family: 'Tahoma';
+}

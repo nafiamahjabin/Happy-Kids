@@ -1,0 +1,115 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="border-class">
+
+        <div class="running-quiz" *ngIf="isrunning">
+            <div class="heading">
+                <h3>Running Quiz Tests</h3>
+            </div>
+            <table class="table table-striped table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            <h5>Quiz Title</h5>
+                        </th>
+                        <th scope="col">
+                            <h5>Starting Time</h5>
+                        </th>
+                        <th scope="col">
+                            <h5>Ending Time</h5>
+                        </th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let quiz of runningQuiz">
+                        <th scope="row">{{quiz.quizTitle}}</th>
+                        <td><span ng-non-bindable>{{quiz.startTime  | date:"dd/MM/yyyy 'at' h:mma"}}</span></td>
+                        <td><span ng-non-bindable>{{quiz.endTime | date:"dd/MM/yyyy 'at' h:mma"}}</span></td>
+                        <td><button class="btn btn-primary"
+                                (click)="onParticipateClick(quiz.quizTitle)">Participate</button>
+                                <div class="alert alert-danger alert-dismissible fade show" *ngIf='err'>
+                                    <strong>Error!</strong> You need to login.
+                                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                </div></td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+
+        </div>
+
+
+
+        <div class="upcomming-quiz" *ngIf="isupcomming">
+            <div class="heading">
+                <h3>Upcomming Quiz Tests</h3>
+            </div>
+            <table class="table table-striped table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            <h5>Name</h5>
+                        </th>
+                        <th scope="col">
+                            <h5>Starting Time</h5>
+                        </th>
+                        <th scope="col">
+                            <h5>Ending Time</h5>
+                        </th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let quiz of upcommingQuiz">
+                        <th scope="row">{{quiz.quizTitle}}</th>
+                        <td><span ng-non-bindable>{{quiz.startTime  | date:"dd/MM/yyyy 'at' h:mma"}}</span></td>
+                        <td><span ng-non-bindable>{{quiz.endTime | date:"dd/MM/yyyy 'at' h:mma"}}</span></td>
+                        <td><button class="btn btn-primary disabled">Participate</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+
+
+        <div class="past-quiz" *ngIf="ispast">
+            <div class="heading">
+                <h3>Past Quiz Tests</h3>
+            </div>
+            <table class="table table-striped table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            <h5>Quiz Title</h5>
+                        </th>
+                        <th scope="col">
+                            <h5>Starting Time</h5>
+                        </th>
+                        <th scope="col">
+                            <h5>Ending Time</h5>
+                        </th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let quiz of pastQuiz">
+                        <th scope="row">{{quiz.quizTitle}}</th>
+                        <td><span ng-non-bindable>{{quiz.startTime  | date:"dd/MM/yyyy 'at' h:mma"}}</span></td>
+                        <td><span ng-non-bindable>{{quiz.endTime | date:"dd/MM/yyyy 'at' h:mma"}}</span></td>
+                        <td><button class="btn btn-primary" (click)="onStandingsClick(quiz.quizTitle)">
+                                See Standings</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </div>
+
+    </div>
+</div>
+
+<app-footer></app-footer>

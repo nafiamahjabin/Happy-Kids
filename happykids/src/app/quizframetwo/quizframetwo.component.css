@@ -1,0 +1,39 @@
+.container, .border-class {
+    border-radius: 10px;
+    color: #fff;
+    background-color: #256398;
+}
+
+.container {
+    border: 15px solid #306B9D;
+}
+.header-area {
+     background-color: #0F3348;
+}
+h2,h3,h4 {
+    margin: 0;
+    padding: 20px;
+    text-align: center; 
+}
+.ques-area{
+    padding: 20px;
+    font-size: 24px;
+}
+.ques {
+    font-size:32px;
+    padding: 10px 0;
+}
+.each-ques {
+    margin:20px;
+}
+p {
+    text-align: center;
+    font-size: 24px;
+}
+.has-submitted {
+    text-align: center;
+}
+.has-submitted button {
+    
+    margin: 20px;
+}

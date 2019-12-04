@@ -1,0 +1,26 @@
+.table-dark,.container {
+    color: #fff;
+    background-color: #256398;
+}
+h3  {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding: 20px;
+}
+.container {
+    border: 15px solid #306B9D;
+}
+.container, .border-class {
+    border-radius: 10px;
+}
+.heading {
+    background-color: #0F3348;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+    background-color:  #213139;
+}

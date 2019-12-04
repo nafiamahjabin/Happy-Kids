@@ -1,0 +1,21 @@
+.admin-login-area{
+    color: red;
+    padding: 10%;
+}
+.logo{
+    padding: 10px;
+    
+}
+.header{
+    padding-left:10%;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+
+}
+label {
+    padding-right: 20px;
+}
+button{
+    margin-left: 20%;
+    margin-top: 20px;
+}

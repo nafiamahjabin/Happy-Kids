@@ -1,0 +1,26 @@
+.container {
+    color: white;
+    border: 10px solid #306B9D;
+    
+}
+.border-class, .container{
+    background-image: repeating-linear-gradient(180deg, #256398, #306B9D 20px, #256398 20px, #306B9D 20px);
+    border-radius: 10px; 
+}
+.header h1 {
+    margin: auto;
+    margin-top: 20px; 
+}
+.video-section {
+    margin:5%;
+}
+.each-video {
+    padding:20px; 
+}
+.each-video h2 {
+    padding: 20px 50px;
+}
+iframe {
+    border: 10px solid rgb(16, 43, 66);
+    border-radius: 10px;
+}

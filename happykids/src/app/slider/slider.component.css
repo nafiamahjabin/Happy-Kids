@@ -1,0 +1,11 @@
+
+.slide-area{
+    border: 10px solid #ffffff;
+    border-radius: 10px; 
+    
+}
+.slide-area-outer {
+    border-bottom: 5px solid #E8E2C4;
+    border-radius: 10px;
+    margin-bottom: -70px;
+}

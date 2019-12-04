@@ -1,0 +1,43 @@
+.section-two {
+    padding-top: 90px;
+    padding-bottom: 30px; 
+    background-color: #FCF5D5;
+    border-bottom: 10px solid #FEE6B4;
+    border-top: 10px solid #FEE6B4;
+    
+}
+.section-three {
+    padding-top: 30px;
+    padding-bottom: 30px; 
+    background-color: #ffffff;
+    text-align: center;
+}
+h1 {
+    color: #3185CB;
+    padding-bottom: 20px;
+}
+h2 {
+    color: #A2825C;
+}
+ p {
+    font-family: Tahoma;
+    color: #A2825C;
+}
+.img-area {
+    border: 10px solid #FEE6B4;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin:auto; 
+}
+hr {
+    border-bottom: 1px solid #FEE6B4;
+    margin-top: 30px; 
+}
+.section-four
+{
+    height: 200px;
+    background: #ffffff;
+    background-image: url('../../assets/images/grass_retina4-2yqdohngqzju07o7oeuwwa.png') ;
+    background-position: bottom;
+    background-repeat: no-repeat; 
+}

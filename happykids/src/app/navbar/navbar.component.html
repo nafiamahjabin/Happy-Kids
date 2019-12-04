@@ -1,0 +1,89 @@
+<div class="container">
+  <div class="header-area">
+    <div class="social-icon">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="btn-group" role="group">
+            <a href="https://www.facebook.com"><i class="fa fa-facebook-official"></i></a>
+            <a href="https://www.whatsapp.com"><i class="fa fa-whatsapp"></i></a>
+            <a href="https://www.pinterest.com"><i class="fa fa-pinterest"></i></a>
+            <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.google.com"><i class="fa fa-google-plus"></i></a>
+          </div>
+        </div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <div class="log-reg-area">
+            <div class="row">
+              <div class="login">
+                  <a (click)="onLoginClick()" *ngIf="!isLoggedin">Log In</a>
+              
+                  <a (click)="onRegisterClick()"  *ngIf="!isLoggedin">Register</a>
+                  
+                  <a (click)="onProfileClick()" *ngIf="isLoggedin">{{ name }}</a>
+              
+                  <a (click)="onLogoutClick()"  *ngIf="isLoggedin">Log Out</a>
+                </div>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="nav-area">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="logo-area">
+            <img src="../../assets/images/logo.png" alt="logo">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <nav class="navbar navbar-expand-lg navbar-light ">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" (click)="onMovieClick()">Movie</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Cartoon
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                    <a class="dropdown-item" *ngFor="let cat of categories"
+                      (click)="onClickCartoon(cat.car_category)">{{ cat.car_category }}</a>
+
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Poem
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" (click)="onPoemClick('Bangla')">Bangla</a>
+                    <a class="dropdown-item" (click)="onPoemClick('English')">English</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" (click)="onClickQuizTest()">Quiz Tests</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
